@@ -1,0 +1,20 @@
+# My First Knitr document
+Aragonda Jyosna
+
+## Introduction
+
+```{r computetime, echo=FALSE}
+time <- format(Sys.time(), "%a %b %c %X %Y")
+rand <- rnorm(1)
+```
+
+The current time is `r time`. My favoriate random number is `r rand`.
+
+
+This is some text (i.e., "a text chunk"). Here is a code chunk.
+
+```{r simulation, echo=TRUE}
+set.seed(1)
+x = rnorm(100)
+mean(x)
+```
